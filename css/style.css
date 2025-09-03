@@ -18,6 +18,39 @@ body {
     justify-content: center;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 79px;
+}
+
+nav {
+    display: flex;
+    align-items: flex-start;
+}
+
+header img {
+    width: 61.09px;
+}
+
+.logo-booki {
+    display: flex;
+    align-items: center;
+}
+
+.menu-principal {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    gap : 68px;
+
+}
+
+li:hover {
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+}
+
 .main-container {
     width: 100%;
     max-width: 1440px;
