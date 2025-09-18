@@ -20,8 +20,8 @@
             <a href="#" class="logo-booki"><img src="images/logo/Booki.png" alt="Logo de Booki"></a>
             <nav>
                 <ul class="nav-menu">
-                    <li class="nav-button"><a href="#">Hébergements</a></li>
-                    <li class="nav-button"><a href="#">Activités</a></li>                    
+                    <li class="nav-button"><a href="#hebergements">Hébergements</a></li>
+                    <li class="nav-button"><a href="#activities">Activités</a></li>                    
                 </ul>
             </nav>
         </header>
@@ -37,53 +37,48 @@
                             <i class="fa-solid fa-location-dot" style="color: #000000;"></i>                                
                         </label>
                     </div>
-                    <input type="search" id="localisation" name='localisation' value="Marseille, France"> 
-                    <button class="search-button">Rechercher</button>
-                </form>
+                    <input type="search" id="localisation" name='localisation' placeholder="Marseille, France" autofocus> 
+                    <button class="search-button-txt">Rechercher</button>
+                    <button class="search-button-glass"><i class="fa-solid fa-magnifying-glass" style="color: white"></i></button>
+                </form>  
                 <div class="filter-menu">
                     <div class="filter-menu-title">
                         Filtres
                     </div>
-                    <div>
+                    <div class="filter-menu-content">
                         <button class="filter-button">
                             <div>
                                 <i class="fa-solid fa-money-bill-wave"></i>
                             </div>
-                            <div>
+                            <p>
                                 Économique
-                            </div>    
+                            </p>    
+                        </button>   
+                        <button class="filter-button">
+                            <div>
+                                <i class="fa-solid fa-person"></i>
+                            </div>
+                            <p>
+                                Familial
+                            </p>    
+                        </button>                             
+                        <button class="filter-button">
+                            <div>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <p>
+                                Romantique
+                            </p>    
                         </button>
-                    </div>   
-                        <div>
-                            <button class="filter-button">
-                                <div>
-                                    <i class="fa-solid fa-person"></i>
-                                </div>
-                                <div>
-                                    Familial
-                                </div>    
-                            </button>
-                        </div>                              
-                        <div>
-                            <button class="filter-button">
-                                <div>
-                                    <i class="fa-solid fa-heart"></i>
-                                </div>
-                                <div>
-                                    Romantique
-                                </div>    
-                            </button>
-                        </div>
-                        <div>
-                            <button class="filter-button">
-                                <div>
-                                    <i class="fa-solid fa-fire"></i>
-                                </div>
-                                <div>
-                                    Nos pépites
-                                </div>    
-                            </button>
-                        </div>
+                        <button class="filter-button">
+                            <div>
+                                <i class="fa-solid fa-fire"></i>
+                            </div>
+                            <p>
+                                Nos pépites
+                            </p>    
+                        </button>
+                    </div>
                 </div>
                 <div class="information">
                     <div class="info-point">
@@ -96,7 +91,7 @@
             </section>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -289,7 +284,7 @@
                 </section>
             </div>
 
-            <div class="activities">
+            <div id="activities">
                 <section class="activities">
                     <div class="activities-title">
                         <h2 class="section-title">Activités à Marseille</h2>
